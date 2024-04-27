@@ -24,13 +24,13 @@ from datetime import datetime
 logging.basicConfig(
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO
 )
-API_ID = "10738943"
-API_HASH = "da61e3a08b5ac78ce28b4a4cd854aeec"
-BOT_TOKEN = "7063154314:AAE3E5jD3PSrRLvlIyPrWaAqlWiqaGc88KU"
-OWNER_ID = "6771364361"
-SUDO_ID = "6163840192"
-LUCIFER = "5044329488"
-COWNER_ID = "5716978554"
+API_ID = "24089031"
+API_HASH = "0615e3afe13ddaaf8e9ddbd3977d35ff"
+BOT_TOKEN = "7114018519:AAE2w9ylyJkUN9rFkLSwWr6BcUYxsIagFBo"
+OWNER_ID = "6584789596"
+SUDO_ID = "5702598840"
+LUCIFER = "2010819209"
+COWNER_ID = "6154972031"
 OP  = [ int(OWNER_ID), int(SUDO_ID), int(COWNER_ID), int(LUCIFER)]
 #TelegramClient..
 sree = TelegramClient(
@@ -39,16 +39,16 @@ sree = TelegramClient(
     api_hash=API_HASH
 ).start(bot_token=BOT_TOKEN)
 
-Owner = "aadillllll"
-repo = "https://github.com/Darkanger00/Banall"
+Owner = "Flexdub_official"
+repo = "https://t.me/+XmPd-pFHRGljYjY1"
 @sree.on(events.NewMessage(pattern="^/start"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/crushbot_support"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/+XmPd-pFHRGljYjY1"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
+            file="https://telegra.ph/file/6035b42dee58754328577.jpg",
             caption=startxt.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -62,7 +62,7 @@ async def start(event):
     if event.sender.id not in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
+            file="https://telegra.ph/file/6035b42dee58754328577.jpg",
             caption=startxt2.format(
                 event.sender.first_name,
                 event.sender.id,
@@ -77,19 +77,19 @@ async def start(event):
 
 @sree.on(events.NewMessage(pattern="^/help"))
 async def start(event):
-    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/crushbot_support"), Button.url("••ʀєρο••", f'{repo}')]
+    buttns = [Button.url("••ѕυρροяτ••", "https://t.me/+XmPd-pFHRGljYjY1"), Button.url("••ʀєρο••", f'{repo}')]
     py = platform.python_version()
     if event.sender.id in OP:
         await sree.send_file(
             event.chat.id,
-            file="https://te.legra.ph/file/d0db33935f4950e0d4d58.jpg",
+            file="https://telegra.ph/file/6035b42dee58754328577.jpg",
             caption=hlptxt.format(event.sender.first_name, event.sender.id),
             link_preview=False,
             buttons=buttns
         )
     if event.sender.id not in OP:
         await event.reply(
-            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://github.com/Darkranger00/Banall)",
+            "Huh Nigga!\nThis is not for you lol 😑\n\nMake your own bot from this [Repository⚡](https://t.me/+XmPd-pFHRGljYjY1)",
             link_preview=False,
         )       
 
@@ -176,7 +176,7 @@ async def ver(events):
 
 
 print("Your Bot  Deployed Successfully ✅")
-print("Join @crushbot_support if you facing any kind of issue!!")
+print("Join @Flex_Support_chat if you facing any kind of issue!!")
 
 
 
